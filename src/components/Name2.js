@@ -10,7 +10,7 @@ const Name = () => {
     const intersection = useIntersection(sectionRef, {
         root:null,
         rootMargin:"0px",
-        threshold:1
+        threshold:0.4
     })
     const fadeIn2 = element=>{
         gsap.to(element,1,{
@@ -24,7 +24,7 @@ const Name = () => {
         })
     }
     
-    intersection && intersection.intersectionRatio < 1
+    intersection && intersection.intersectionRatio < 0.4
     ?fadeOut2(".fadeIn2")
     : fadeIn2(".fadeIn2")
 
@@ -40,7 +40,7 @@ const Name = () => {
         })
     }
     
-    intersection && intersection.intersectionRatio < 1
+    intersection && intersection.intersectionRatio < 0.4
     ?fadeOutH1(".fadeInH1")
     : fadeInH1(".fadeInH1")
 
@@ -59,7 +59,7 @@ const Name = () => {
         })
     }
     
-    intersection && intersection.intersectionRatio < 1
+    intersection && intersection.intersectionRatio < 0.4
     ?fadeOut1(".fadeIn1")
     : fadeIn1(".fadeIn1")
     const fadeInH4B = element=>{
@@ -77,7 +77,7 @@ const Name = () => {
         })
     }
     
-    intersection && intersection.intersectionRatio < 1
+    intersection && intersection.intersectionRatio < 0.4
     ?fadeOutH4B(".fadeInH4B")
     : fadeInH4B(".fadeInH4B")
     const fadeInH4A = element=>{
@@ -95,14 +95,14 @@ const Name = () => {
         })
     }
     
-    intersection && intersection.intersectionRatio < 1
+    intersection && intersection.intersectionRatio < 0.4
     ?fadeOutH4A(".fadeInH4A")
     : fadeInH4A(".fadeInH4A")
     
     
     return ( 
         <article id="headPage">
-            <section id="section-side">
+            {/* <section id="section-side">
                 <h2>Mohammad Saffaf</h2>
                 <article id="article-side">
                     <div style={{width: '35%',border:' 2px solid rgb(255, 67, 80)'}}></div>
@@ -114,7 +114,7 @@ const Name = () => {
                     <p>SCROLLDOWN ––––––––––</p>
                     
                 </div>
-            </section>
+            </section> */}
         <section id="section-name" ref={sectionRef} >
             <h1 className='fadeInH1'>Mohammad Saffaf</h1>
             <p  className="fadeIn2"></p>
@@ -128,3 +128,47 @@ const Name = () => {
 }
  
 export default Name;
+
+// import './Componen.css';
+// import React from 'react';
+// import "animate.css/animate.min.css";
+// // import ScrollAnimation from 'react-animate-on-scroll';
+// class Name2 extends React.Component {
+//    render(
+       
+//    ) {
+     
+    
+//     return ( 
+
+//         <article id="headPage">
+            
+//             {/* <section id="section-side">
+//                 <h2>Mohammad Saffaf</h2>
+//                 <article id="article-side">
+//                     <div style={{width: '30%',border:' 2px solid rgb(255, 67, 80)'}}></div>
+//                     <div></div>
+//                     <div></div>
+//                     <div></div>
+//                 </article>
+//                 <div id="sroll">
+//                     <p>SCROLLDOWN ––––––––––</p>
+                    
+//                 </div>
+//             </section> */}
+            
+//         <section id="section-name" class="animate__animated animate__backOutLeft  " >
+        
+//             <h1>Mohammad Saffaf </h1>
+//             <p className="line1"></p>
+//             <p className="line2"></p>
+            
+//             <h4>Web-Developer /</h4>
+//             <h4>IT-Servicetechniker ....</h4>
+//         </section>
+        
+//         </article>
+//      );
+// }}
+ 
+// export default Name2;
