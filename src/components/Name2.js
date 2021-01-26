@@ -12,7 +12,7 @@ const Name = () => {
     const fadeIn2 = element=>{
         gsap.to(element,1,{
             marginLeft:"0",
-            transition: "all 1s ease-out "
+            transition: "all .1s ease-out "
         })}
     const fadeOut2 = element=>{
         gsap.to(element,1,{
@@ -83,11 +83,132 @@ const Name = () => {
         })}
     const divOut1 = element=>{
         gsap.to(element,1,{
-        marginLeft:"-60vh"   
+            marginLeft:"70vh",
+            
         })}
     intersection2 && intersection2.intersectionRatio < 0.4
     ?divOut1(".divIn1")
     : divIn1(".divIn1")
+    const divIn2 = element=>{
+        gsap.to(element,1,{
+            // position: "fixed",
+            // right:"-100%",
+            // overflowY: "auto",
+            // zIndex: "1000"
+            marginLeft:"0",
+            transition: "all 1s ease-out "
+        })}
+    const divOut2 = element=>{
+        gsap.to(element,1,{
+            marginLeft:"70vh",
+            // position: "none",
+            // right:"30%",
+            // overflowY: "auto",
+            // zIndex: "none"
+        })}
+    intersection2 && intersection2.intersectionRatio < 0.4
+    ?divOut2(".divIn2")
+    : divIn2(".divIn2")
+    const divIn3 = element=>{
+        gsap.to(element,1,{
+            // position: "fixed",
+            // right:"-100%",
+            // overflowY: "auto",
+            // zIndex: "1000"
+            marginLeft:"0",
+            transition: "all 1s ease-out "
+        })}
+    const divOut3 = element=>{
+        gsap.to(element,1,{
+            marginLeft:"70vh",
+            // position: "none",
+            // right:"30%",
+            // overflowY: "auto",
+            // zIndex: "none"
+        })}
+    intersection2 && intersection2.intersectionRatio < 0.4
+    ?divOut3(".divIn3")
+    : divIn3(".divIn3")
+    const divIn4 = element=>{
+        gsap.to(element,1,{
+            // position: "fixed",
+            // right:"-100%",
+            // overflowY: "auto",
+            // zIndex: "1000"
+            marginLeft:"0",
+            transition: "all 1s ease-out "
+        })}
+    const divOut4 = element=>{
+        gsap.to(element,1,{
+            marginLeft:"70vh",
+            // position: "none",
+            // right:"30%",
+            // overflowY: "auto",
+            // zIndex: "none"
+        })}
+    intersection2 && intersection2.intersectionRatio < 0.4
+    ?divOut4(".divIn4")
+    : divIn4(".divIn4")
+    const divIn5 = element=>{
+        gsap.to(element,1,{
+            // position: "fixed",
+            // right:"-100%",
+            // overflowY: "auto",
+            // zIndex: "1000"
+            marginLeft:"0",
+            transition: "all 1s ease-out "
+        })}
+    const divOut5 = element=>{
+        gsap.to(element,1,{
+            marginLeft:"70vh",
+            // position: "none",
+            // right:"30%",
+            // overflowY: "auto",
+            // zIndex: "none"
+        })}
+    intersection2 && intersection2.intersectionRatio < 0.4
+    ?divOut5(".divIn5")
+    : divIn5(".divIn5")
+    const divIn6 = element=>{
+        gsap.to(element,1,{
+            // position: "fixed",
+            // right:"-100%",
+            // overflowY: "auto",
+            // zIndex: "1000"
+            marginLeft:"0",
+            transition: "all 1s ease-out "
+        })}
+    const divOut6 = element=>{
+        gsap.to(element,1,{
+            marginLeft:"70vh",
+            // position: "none",
+            // right:"30%",
+            // overflowY: "auto",
+            // zIndex: "none"
+        })}
+    intersection2 && intersection2.intersectionRatio < 0.4
+    ?divOut6(".divIn6")
+    : divIn6(".divIn6")
+    const divIn7 = element=>{
+        gsap.to(element,1,{
+            // position: "fixed",
+            // right:"-100%",
+            // overflowY: "auto",
+            // zIndex: "1000"
+            marginLeft:"0",
+            transition: "all 1s ease-out "
+        })}
+    const divOut7 = element=>{
+        gsap.to(element,1,{
+            marginLeft:"70vh",
+            // position: "none",
+            // right:"30%",
+            // overflowY: "auto",
+            // zIndex: "none"
+        })}
+    intersection2 && intersection2.intersectionRatio < 0.4
+    ?divOut7(".divIn7")
+    : divIn7(".divIn7")
 
     return ( 
         <article id="secandPage">
@@ -105,37 +226,37 @@ const Name = () => {
                 <div  className="CSS3-div"></div>
             </div>
             </div>
-            <div>
+            <div className="divIn2">
             <h4>Javascript</h4>
             <div className="first-div">
                 <div  className="Javascript-div"></div>
             </div>
             </div>
-            <div>
+            <div className="divIn3">
             <h4>MongoDB </h4>
             <div className="first-div">
                 <div  className="MongoDB-div"></div>
             </div>
             </div>
-            <div>
+            <div className="divIn4">
             <h4>Node.js/Express.js </h4>
             <div className="first-div">
                 <div  className="Express-div"></div>
             </div>
             </div>
-            <div>
+            <div className="divIn5">
             <h4>React.js</h4>
             <div className="first-div">
                 <div  className="React-div"></div>
             </div>
             </div>
-            <div>
+            <div className="divIn6">
             <h4>CMS / Wordpress</h4>
             <div className="first-div">
                 <div  className="CMS-div"></div>
             </div>
             </div>
-            <div>
+            <div className="divIn7">
             <h4>Git/Github </h4>
             <div className="first-div">
                 <div  className="Github-div"></div>
