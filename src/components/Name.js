@@ -6,45 +6,45 @@ import gsap from "gsap";
 import './Componen.css';
 
 const Name = () => {
-    const sectionRef = useRef(null);
-    const intersection = useIntersection(sectionRef, {
+    const sectionRef2 = useRef(null);
+    const intersection = useIntersection(sectionRef2, {
         root:null,
         rootMargin:"0px",
         threshold:1
     })
-    const fadeIn2 = element=>{
+    const namefadeIn2 = element=>{
         gsap.to(element,1,{
             marginLeft:"0",
-            transition: "all 1s ease-out "
+            transition: "all .1s ease-out "
         })
     }
-    const fadeOut2 = element=>{
+    const namefadeOut2 = element=>{
         gsap.to(element,1,{
         marginLeft:"-60vh"   
         })
     }
     
     intersection && intersection.intersectionRatio < 1
-    ?fadeOut2(".fadeIn2")
-    : fadeIn2(".fadeIn2")
+    ?namefadeOut2(".namefadeIn2")
+    : namefadeIn2(".namefadeIn2")
 
-    const fadeInH1 = element=>{
+    const namefadeInH1 = element=>{
         gsap.to(element,1,{
             marginLeft:"0",
             transition: "all 1ms ease-out"
         })
     }
-    const fadeOutH1 = element=>{
+    const namefadeOutH1 = element=>{
         gsap.to(element,1,{
         marginLeft:"-60vh"   
         })
     }
     
     intersection && intersection.intersectionRatio < 1
-    ?fadeOutH1(".fadeInH1")
-    : fadeInH1(".fadeInH1")
+    ?namefadeOutH1(".namefadeInH1")
+    : namefadeInH1(".namefadeInH1")
 
-    const fadeIn1 = element=>{
+    const namefadeIn1 = element=>{
         gsap.to(element,1,{
             marginLeft:"15%",
             transition: "all .1s ease-out "
@@ -52,7 +52,7 @@ const Name = () => {
 
         })
     }
-    const fadeOut1 = element=>{
+    const namefadeOut1 = element=>{
         gsap.to(element,1,{
         marginLeft:"-60vh"
             
@@ -60,9 +60,9 @@ const Name = () => {
     }
     
     intersection && intersection.intersectionRatio < 1
-    ?fadeOut1(".fadeIn1")
-    : fadeIn1(".fadeIn1")
-    const fadeInH4B = element=>{
+    ?namefadeOut1(".namefadeIn1")
+    : namefadeIn1(".namefadeIn1")
+    const namefadeInH4B = element=>{
         gsap.to(element,1,{
             marginLeft:"0",
             
@@ -70,7 +70,7 @@ const Name = () => {
 
         })
     }
-    const fadeOutH4B = element=>{
+    const namefadeOutH4B = element=>{
         gsap.to(element,1,{
         marginLeft:"-60vh"
             
@@ -78,9 +78,9 @@ const Name = () => {
     }
     
     intersection && intersection.intersectionRatio < 1
-    ?fadeOutH4B(".fadeInH4B")
-    : fadeInH4B(".fadeInH4B")
-    const fadeInH4A = element=>{
+    ?namefadeOutH4B(".namefadeInH4B")
+    : namefadeInH4B(".namefadeInH4B")
+    const namefadeInH4A = element=>{
         gsap.to(element,1,{
             marginLeft:"0",
             
@@ -88,7 +88,7 @@ const Name = () => {
 
         })
     }
-    const fadeOutH4A = element=>{
+    const namefadeOutH4A = element=>{
         gsap.to(element,1,{
         marginLeft:"-60vh"
             
@@ -96,8 +96,8 @@ const Name = () => {
     }
     
     intersection && intersection.intersectionRatio < 1
-    ?fadeOutH4A(".fadeInH4A")
-    : fadeInH4A(".fadeInH4A")
+    ?namefadeOutH4A(".namefadeInH4A")
+    : namefadeInH4A(".namefadeInH4A")
     
     
     return ( 
@@ -115,13 +115,13 @@ const Name = () => {
                     
                 </div>
             </section>
-        <section id="section-name" ref={sectionRef} >
-            <h1 className='fadeInH1'>Mohammad Saffaf</h1>
-            <p  className="fadeIn2"></p>
-            <p  className="fadeIn1" ></p>
+        <section id="section-name" ref={sectionRef2} >
+            <h1 className='namefadeInH1'>Mohammad Saffaf</h1>
+            <p  className="namefadeIn2"></p>
+            <p  className="namefadeIn1" ></p>
             
-            <h4 className='fadeInH4A'>Web-Developer /</h4>
-            <h4 className='fadeInH4B'>IT-Servicetechniker ....</h4>
+            <h4 className='namefadeInH4A'>Web-Developer /</h4>
+            <h4 className='namefadeInH4B'>IT-Servicetechniker ....</h4>
         </section>
         </article>
      );
